@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Qvell Crisostomo</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>2x2 pic.jpg</picture>
+    </student>
+    <student>
+        <name>Maraiah Queen Arceta</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>aiah2x2.png</picture>
+    </student>
+    <student>
+        <name>Nicolette Vergara</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>colet2x2.png</picture>
+    </student>
+    <student>
+        <name>Mary Loi Yves Ricalde</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>maloi2x2.png</picture>
+    </student>
+    <student>
+        <name>Gweneth Apuli</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>gwen2x2.png</picture>
+    </student>
+    <student>
+        <name>Stacey Aubrey Sevilleja</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>stacey2x2.png</picture>
+    </student>
+    <student>
+        <name>Mikhaela Janna Lim</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>mikha2x2.png</picture>
+    </student>
+    <student>
+        <name>Jhoanna Robles</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>jho2x2.png</picture>
+    </student>
+    <student>
+        <name>Sheena Mae Catacutan</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>she2x2.png</picture>
+    </student>
+    <student>
+        <name>Jeyr Robles</name>
+        <course>BSIT</course>
+        <year_section>3A-G1</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+        <picture>jr2x2.jpg</picture>
+    </student>
+</students>

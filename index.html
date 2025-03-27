@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Colleges - Library Users</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            margin: auto;
+            gap: 15px;
+        }
+
+        .card {
+            width: calc(33.33% - 20px);
+            border: 3px solid black;
+            padding: 10px;
+            text-align: left;
+            background-color: white;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center; 
+            gap: 10px;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            order: 2; 
+            position: relative;
+            top: -25px; 
+        }
+
+        .card-content {
+            font-size: 12px;
+            flex: 1;
+        }
+
+        @media (max-width: 900px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ABC Colleges</h1>
+    <h2>Library Users</h2>
+    
+    <div class="container" id="students-container"></div>
+
+    <script>
+        function loadXML() {
+            fetch('crisostomo_qvell.xml')
+                .then(response => response.text())
+                .then(data => {
+                    let parser = new DOMParser();
+                    let xmlDoc = parser.parseFromString(data, 'text/xml');
+                    let students = xmlDoc.getElementsByTagName('student');
+                    let container = document.getElementById('students-container');
+
+                    for (let i = 0; i < students.length; i++) {
+                        let name = students[i].getElementsByTagName('name')[0].textContent;
+                        let course = students[i].getElementsByTagName('course')[0].textContent;
+                        let year_section = students[i].getElementsByTagName('year_section')[0].textContent;
+                        let adviser = students[i].getElementsByTagName('adviser')[0].textContent;
+                        let school_year = students[i].getElementsByTagName('school_year')[0].textContent;
+                        let picture = students[i].getElementsByTagName('picture')[0].textContent;
+
+                        let card = document.createElement('div');
+                        card.className = 'card';
+                        card.innerHTML = `
+                            <div class="card-content">
+                                <p><strong>Name:</strong> ${name}</p>
+                                <p><strong>Course:</strong> ${course}</p>
+                                <p><strong>Year Level / Section:</strong> ${year_section}</p>
+                                <p><strong>Adviser:</strong> ${adviser}</p>
+                                <p><strong>School Year:</strong> ${school_year}</p>
+                            </div>
+                            <img src="${picture}" alt="${name}">
+                        `;
+                        container.appendChild(card);
+                    }
+                })
+                .catch(error => console.log('Error loading XML:', error));
+        }
+
+        window.onload = loadXML;
+    </script>
+</body>
+</html>
